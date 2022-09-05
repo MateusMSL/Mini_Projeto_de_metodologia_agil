@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style_search.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Spotify FAKE</title>
+  <!-- CSS only -->
+
+</head>
+
+<body>
+
+  <div class="content">
+
+    <header class="w3col-12" id="header_base">
+
+      <a>
+        <section id="main_logo" onclick="logoreturn()"> </section>
+      </a>
+      <!-- IMAGEM DA LOGO -->
+
+    </header>
+
+  </div>
+
+
+  
+
+  <div class="content">
+
+    <section class="w3col-11 mt-4" id="title">
+
+      <h1 id="title1">Digite o nome da música:</h1>
+
+    </section>
+
+    <section class="w3col-5 mt-4" id="barra_de_pesquisa">
+
+      <input type="text" name="search_text" id="search_text" class="w3col-9">
+
+      <button class="btn btn-outline-danger" id="search_button" type="submit" onclick="buscar()">Buscar</button>
+
+    </section>
+
+  </div>
+
+
+
+  <div class="row" id="ver10">
+
+    <section class="w3col-6" id="song_title">
+
+      <p id="title_song"> TITULO NÃO ENCONTRADO. TENTE NOVAMENTE </p>
+
+    </section>
+
+  </div>
+
+<br /> <article class="mask gradient-card align-items-center" id="backgroundgradiente"><br />
+  <div class="table-responsive" id="catalogo">
+    <table class="table">
+      <tr>
+        <td colspan="4" id="tdtitle">
+          <h1 id="title2"> NOSSO CATÁLOGO </h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="musicas/Blinding Lights - The Weekend/Blinding Lights - The Weekend.jpg" onclick="changesong_BL()" class="mscs CURSOR2"  />
+          <p class="textmusica">Blinding Lights - The Weekend</p>
+        </td>
+        <td>
+          <img src="musicas/Congratulations - Post Malone/Post Malone - Congratulations.jpg" onclick="changesong_CON()" class="mscs CURSOR2"  />
+          <p class="textmusica">Congratulations - Post Malone</p>
+        </td>
+        <td>
+          <img src="musicas/Heat Waves - Glass Animals/Heat Waves - Glass Animal.jpg" onclick="changesong_HW()" class="mscs CURSOR" />
+          <p class="textmusica">Heat Waves - Glass Animals</p>
+        </td>
+        <td>
+          <img src="musicas/Summertime Sadness - Lana Del Rey/Summertime Sadness - Lana Del Rey.jpg" onclick="changesong_SS()" class="mscs CURSOR" />
+          <p class="textmusica">Summertime Sadness - Lana Del Rey</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="musicas/Logic - 1-800-237-8255/Logic.png" onclick="changesong_L()" class="mscs CURSOR2" />
+          <p class="textmusica">Logic - 1-800-237-8255</p>
+        </td>
+        <td>
+          <img src="musicas/Major Lazer - Know No Better/major-lazer-know-no-better-59490a464cff5.jpg" onclick="changesong_ML()" class="mscs CURSOR" />
+          <p class="textmusica"> Know No Better - Major Lazer</p>
+        </td>
+        <td>
+          <img src="musicas/No Idea - Don Toliver/No Idea - Don Toliver.jpg" onclick="changesong_DT()" class="mscs CURSOR2" />
+          <p class="textmusica">No Idea - Don Toliver</p>
+        </td>
+        <td>
+          <img src="musicas/Rain on me - Lady Gaga/Lady gaga, Ariana Grande - Rain on Me.png" onclick="changesong_ROM()" class="mscs CURSOR2" />
+          <p class="textmusica">Rain On Me - Lady Gaga</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center">
+          <img src="musicas/Under the Influence - Chis Brown/Under Influence - Chris Brown.jpg" onclick="changesong_UTI()" class="mscs CURSOR2" />
+          <p class="textmusica">Under The Influence - Chris Brown</p>
+        </td>
+
+      </tr>
+    </table>
+  </div>
+
+  
+
+  <div class="view" id="ver1">
+    
+      <div class="container d-flex justify-content-center my-4 mb-5">
+
+        <div id="mobile-box">
+
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <div class="view">
+              <img id="album" class="card-img-top"
+                src="musicas/Blinding Lights - The Weekend/Blinding Lights - The Weekend.jpg" alt="Card image cap">
+              <a href="https://bachataurban.com/" target="_blank">
+                <div class="mask"></div>
+              </a>
+            </div>
+
+            
+
+            <!-- Card content -->
+            <div class="card-body text-center">
+
+              <h5 class="h5 font-weight-bold"><span id="autor"></span></h5>
+              <p class="mb-0"><span id="nomedamusica"></span></p>
+
+              
+              <audio id="music" preload="true">
+                <source
+                  src="musicas/Blinding Lights - The Weekend/The Weeknd - Blinding Lights (Official Video) (320 kbps).mp3">
+              </audio>
+              
+              <div id="audioplayer">
+                <img src="img/1486348532-music-play-pause-control-go-arrow_80458.png" width="28px" height="28px"
+                  id="pButton" class="fas fa-play" />
+                <div id="timeline">
+                  <div id="playhead"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- Card -->
+
+          <section class="w3col-2" id="lyrics_position_button">
+            <button type="button" class="btn btn-danger" id="lyrics_button" onclick="ativar_lyrics()">Lyrics</button>
+          </section>
+
+          <br/> <br/> <br/> 
+          
+          <section class=" w3col-8 actual_lyrics" id="lyrics_atual_change">
+    
+            <p id="part1"> LAMENTAMOS POR ISSO, MAS HOUVE UM ERRO AO CARREGAR A LETRA DA MUSICA </p>
+            <p id="part2"> </p>
+    
+          </section>
+        </div>
+        
+      </div>
+
+    </div>
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</body>
+
+<script src="JS/Spotify_script.js"></script>
+
+</html>

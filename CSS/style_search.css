@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+
+
+#header_base {
+  margin: 0;
+  height: 100px;
+  background-color: #353535;
+  z-index: 1;
+  border-bottom: 3px solid red;
+  border-top: 3px solid red;
+  
+}
+
+.CURSOR:hover{
+
+  border: 4px solid rgb(83, 82, 82);
+  cursor: pointer;
+}
+
+.CURSOR2:hover{
+
+  border: 4px solid rgb(255, 166, 166);
+  cursor: pointer;
+}
+
+#ver1 {
+  display: none;
+}
+
+
+#ver10 {
+  display: none;
+}
+
+
+#backgroundgradiente{
+
+  border-top: 4px solid red;
+  height: auto;
+}
+
+#main_logo {
+
+  height: 90px;
+  width: 90px;
+  border: 2px solid rgb(245, 92, 92);
+  background-color: rgb(249, 130, 130);
+  border-radius: 60px;
+  margin-left: 650px;
+  background-image: url(../img/cloud.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 5px;
+  cursor: pointer;
+
+}
+
+#main_logo:hover {
+
+  border: 2px solid rgb(255, 169, 169);
+}
+
+#title {
+
+  height: 45px;
+  margin: 0 auto;
+  
+}
+
+.textmusica {
+  font-family: 'Public Sans', sans-serif;
+  margin-top: 5px;
+  font-size: 14pt;
+  color:white;
+}
+
+
+
+#title1 {
+  text-align: center;
+  color: red;
+  font-family: 'Public Sans', sans-serif;
+}
+
+#tdtitle {
+  text-align: left;
+  padding: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(184, 80, 60, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(185, 91, 73, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(214, 103, 81, 0.5) 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(190, 92, 72, 0.5) 100%);
+  font-weight: bold;
+}
+
+#title2 {
+  text-align: left;
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 24pt;
+  margin-top: 10px;
+}
+
+#barra_de_pesquisa {
+  height: 55px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#search_text::selection {
+  color: rgb(123, 123, 123);
+  background: rgb(255, 192, 192);
+
+
+}
+
+
+#search_button {
+
+  border-radius: 10px;
+  float: right;
+  height: 100%;
+  margin-right: 3%;
+}
+
+#search_text {
+
+  border-radius: 50px;
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 100%;
+  border: 2px solid rgb(249, 130, 130);
+  padding: 8px;
+  font-size: 16pt;
+  font-family: 'Public Sans', sans-serif;
+}
+
+#search_text::before {
+
+  border: 2px solid green;
+}
+
+#song_title {
+
+  float: left;
+  margin: left;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(249, 130, 130);
+  background-color: #5e5c5c;
+  
+
+}
+
+#album_cape {
+
+  height: 220px;
+  border-radius: 20px;
+  border: 4px solid rgb(245, 92, 92);
+  float: left;
+  margin-top: 30px;
+  margin-left: 580px;
+  background-image: url(img/vynil.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+
+}
+
+#title_song {
+
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#lyrics_position_button{
+
+  float:none;
+  height: 43px;
+  margin-left: 54px;
+  margin-top: 40px;
+
+}
+
+.actual_lyrics{
+  border: 1px solid #000;
+  height: auto;
+  background-color: #dfdfdf;
+  border: 4px solid rgb(239, 129, 129);
+  border-radius: 20px;
+}
+
+#lyrics_atual_change{
+  padding: 20px;
+  display: none;
+  width: 100%;
+  font-size: 12pt;
+  font-family: 'Public Sans', sans-serif;
+  color: rgb(rgb(56, 52, 52), green, blue);
+  line-height: 28px;
+}
+
+#lyrics_button {
+  float:none;
+  margin-top: 1px;
+  width: 247px;
+  font-size: 15pt;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bolder;
+}
+
+#lyrics_area {
+
+  float: left;
+  margin-left: 240px;
+  margin-top: 10px;
+  border: 2px solid red;
+  background-color: #5e5c5c;
+  color: white;
+  padding: 10px;
+  height: auto;
+  border-radius: 30px;
+  display: none;
+}
+
+
+.mscs {
+  width: 250px;
+  height: 270px;
+}
+
+td {
+  text-align: center;
+}
+
+html,
+body,
+.view {
+  height: auto;
+}
+
+
+#mobile-box {
+  width: 360px;
+}
+
+.gradient-card {
+  height: auto;
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+}
+
+.gradient-card2 {
+  height: auto;
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(184, 80, 60, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(185, 91, 73, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(214, 103, 81, 0.5) 100%);
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(190, 92, 72, 0.5) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+}
+
+
+.card {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.card .view {
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h5 a {
+  color: #0d47a1;
+}
+
+.card h5 a:hover {
+  color: #072f6b;
+}
+
+#pButton {
+  float: left;
+}
+
+#timeline {
+  width: 85%;
+  height: 2px;
+  margin-top: 24px;
+  margin-left: 10px;
+  float: right;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+#pButton {
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+
+
+#playhead {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: -3px;
+  background: black;
+  cursor: pointer;
+}
+
+
+/* For desktop: */
+.w3col-1 {
+  width: 6.13%;
+}
+
+.w3col-2 {
+  width: 16.66%;
+}
+
+.w3col-3 {
+  width: 25%;
+}
+
+.w3col-4 {
+  width: 33.33%;
+}
+
+.w3col-5 {
+  width: 41.66%;
+}
+
+.w3col-6 {
+  width: 50%;
+}
+
+.w3col-7 {
+  width: 58.33%;
+}
+
+.w3col-8 {
+  width: 66.66%;
+}
+
+.w3col-9 {
+  width: 75%;
+}
+
+.w3col-10 {
+  width: 83.33%;
+}
+
+.w3col-11 {
+  width: 91.66%;
+}
+
+.w3col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 868px) {
+  /* For mobile phones: */
+
+  #barra_de_pesquisa {
+    width: 65%;
+  }
+
+
+  #search_button {
+    margin-right: 0%;
+  }
+
+  #title1 {
+    font-size: 25pt;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 478px) {
+
+  /* For mobile phones: */
+  #barra_de_pesquisa {
+    width: 95%;
+  }
+
+  #title1 {
+    font-size: 16pt;
+  }
+
+}
+
+@media only screen and (max-width: 328px) {
+
+  /* For mobile phones: */
+  #barra_de_pesquisa {
+    width: 100%;
+  }
+
+  #title1 {
+    font-size: 12pt;
+  }
+
+
+  #search_text {
+    width: 65%;
+    font-size: 14pt;
+  }
+
+  #search_button {
+    width: 25%;
+    margin: 0;
+
+  }
+
+  #mobile-box {
+    width: 260px;
+  }
+
+  #timeline {
+    width: 65%;
+    float:left;
+    margin-left: 25px;
+  }
+
+  .view {
+    width: 100%;
+  }
+
+  #lyrics_position_button{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  
+  #lyrics_button{
+    margin: 0;
+  }
+
+
+}
